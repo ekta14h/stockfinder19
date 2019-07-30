@@ -1,0 +1,1 @@
+web: python equity_index.py

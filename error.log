@@ -1,0 +1,15 @@
+[30/Jul/2019:10:43:38] ENGINE Listening for SIGTERM.
+[30/Jul/2019:10:43:38] ENGINE Bus STARTING
+[30/Jul/2019:10:43:38] ENGINE Set handler for console events.
+[30/Jul/2019:10:43:39] ENGINE Serving on unknown interface (dynamic?)
+[30/Jul/2019:10:43:39] ENGINE Serving on http://127.0.0.1:8090
+[30/Jul/2019:10:43:39] ENGINE Bus STARTED
+[30/Jul/2019:10:44:39] ENGINE Console event 0: shutting down bus
+[30/Jul/2019:10:44:39] ENGINE Removed handler for console events.
+[30/Jul/2019:10:44:39] ENGINE Bus STOPPING
+[30/Jul/2019:10:44:39] ENGINE HTTP Server wsgiserver.WSGIServer(('0.0.0.0', 8383)) shut down
+[30/Jul/2019:10:44:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8090)) shut down
+[30/Jul/2019:10:44:39] ENGINE Handler for console events already off.
+[30/Jul/2019:10:44:39] ENGINE Bus STOPPED
+[30/Jul/2019:10:44:39] ENGINE Bus EXITING
+[30/Jul/2019:10:44:39] ENGINE Waiting for child threads to terminate...

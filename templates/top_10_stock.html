@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Top 10 Stocks</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<style>
+		* {
+	  box-sizing: border-box;
+	}
+
+	/* Style the search field */
+	form.example input[type=text] {
+	  padding: 10px;
+	  font-size: 17px;
+	  border: 1px solid grey;
+	  float: left;
+	  width: 80%;
+	  background: #f1f1f1;
+	}
+
+	/* Style the submit button */
+	form.example button {
+	  float: left;
+	  width: 20%;
+	  padding: 10px;
+	  background: #2196F3;
+	  color: white;
+	  font-size: 17px;
+	  border: 1px solid grey;
+	  border-left: none; /* Prevent double borders */
+	  cursor: pointer;
+	}
+
+	form.example button:hover {
+	  background: #0b7dda;
+	}
+
+	/* Clear floats */
+	form.example::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+	</style>
+
+</head>
+
+<body>
+	<h2 align="center">Top 10 Stocks</h2>
+	
+	<table class="w3-table-all">
+    
+    <tr class="w3-blue">
+		<th>Name</th>
+		<th>Code</th> 
+		<th>Open</th>
+		<th>High</th>
+		<th>Low</th>
+		<th>Close</th>
+	</tr>
+	</thead>
+    {% for key,value in data.items(): %}
+			<tr>
+				<td> {{ key }} </td>
+				<td> {{ value['SC_CODE'] }} </td>
+				<td> {{ value['OPEN'] }} </td>
+				<td> {{ value['HIGH'] }} </td>
+				<td> {{ value['LOW'] }} </td>
+				<td> {{ value['CLOSE'] }} </td>
+			</tr>
+		{% endfor %}
+  </table>
+</br>
+</br>
+  <form class="example" method="get" action="get_stock">
+		<h1 align="center">Search Stock</h1>
+	    <input type="text"  name="name" />
+	    <button type="submit" >Find Stock</button>
+	</form>
+
+
+</body>
+</html>
+
+
