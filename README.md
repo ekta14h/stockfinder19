@@ -2,7 +2,7 @@
 This project is to create a cherrypy web app. It displays top 10 stocks from the BSE link 
 and also it has option to search for a stock by its name and get its corresponding details.
 
-# Project File details
+## Project File details
 
 - [[equity_index.py](equity_index.py)] - CherryPy app. It exposes the service on port 5000.
 
