@@ -1,5 +1,5 @@
 # StockFinder Web App
-This project is on creating a cherrypy web app. It displays top 10 stocks from the BSE link 
+This project is to create a cherrypy web app. It displays top 10 stocks from the BSE link 
 and also it has option to search for a stock by its name and get its corresponding details.
 
 # Project File details
